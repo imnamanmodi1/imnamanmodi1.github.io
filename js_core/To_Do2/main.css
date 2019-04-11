@@ -1,0 +1,19 @@
+.container {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  span {
+    color: brown;
+  }
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+}
+input[type="checkbox"]:checked + p {
+    text-decoration: line-through;
+}
+button{
+    display: inline;
+}

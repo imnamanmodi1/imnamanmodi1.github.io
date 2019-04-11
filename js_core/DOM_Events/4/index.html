@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Move Mouse Cursor</h1>
+    <p></p>
+    <script>
+        // document.addEventListener('mousemove', (e) => console.log(e.clientX, e.clientY))
+        let p = document.querySelector('p');
+        function moveCoordinates(e) {
+                p.innerText = `ScreenX: ${e.screenX}
+                ScreenY: ${e.screenY}
+                clientX: ${e.clientX}
+                clientY: ${e.clientY}`
+        }
+        document.addEventListener('mousemove', moveCoordinates)   ;
+    </script>
+</body>
+</html>
